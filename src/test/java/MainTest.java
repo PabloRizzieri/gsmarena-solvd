@@ -5,31 +5,30 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 
 
-public class MainTest {
+public abstract class MainTest {
 
     WebDriver driver;
 
-    @BeforeMethod
-    static void setupClass(){
+    @BeforeClass
+    void setupClass(){
         WebDriverManager.chromedriver().setup();
-    }
-
-    @BeforeTest
-    void setupTest(){
         driver = new ChromeDriver();
     }
 
+    @BeforeTest
+    abstract void setupTest();
+
     @AfterTest
-    void teardown(){
+    void tearDown(){
         driver.quit();
     }
 
-    @Test
-    void test(){
-        driver.get("https://bonigarcia.dev/selenium-webdriver-java/");
-        String tittle = driver.getTitle();
-
-        Assert.assertTrue(tittle.contains("Selenium WebDriver"));
-    }
+//    @Test
+//    void test(){
+//        driver.get("https://bonigarcia.dev/selenium-webdriver-java/");
+//        String tittle = driver.getTitle();
+//
+//        Assert.assertTrue(tittle.contains("Selenium WebDriver"));
+//    }
 
 }
