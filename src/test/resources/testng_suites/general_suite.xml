@@ -1,17 +1,15 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="General suite" verbose="-1" parallel="tests" thread-count="10">
+<suite name="General Suite" verbose="-1" parallel="tests" thread-count="10">
 
-    <test name="Moving blocks tests">
+    <test name="Key Presses Tests">
         <classes>
-            <class name="DragAndDropTest">
+            <class name="com.solvd.theinternet_solvd.KeyPressesTest">
                 <methods>
-                    <include name="moveBlockAtoBlockB"/>
-                    <include name="moveBlockBtoBlockA"/>
+                    <include name="successfulRandomTest"/>
                 </methods>
             </class>
         </classes>
     </test>
-
 </suite>
