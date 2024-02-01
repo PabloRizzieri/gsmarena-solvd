@@ -18,7 +18,6 @@ public class FileUploadTests extends MainTest {
 
     /**
      * Test to verify file upload functionality.
-     * @throws IOException If an I/O error occurs when loading properties.
      */
     @Test(description = "Verify file upload functionality")
     public void verifyFileUploadValidTest() {
