@@ -9,19 +9,19 @@ import org.testng.annotations.*;
 
 public abstract class MainTest {
 
-    WebDriver driver;
+   protected WebDriver driver;
 
     @BeforeClass
-    void setupClass(){
+    protected void setupClass(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
     }
 
-    @BeforeTest
-    abstract void setupTest();
+
+    protected abstract void setupTest();
 
     @AfterTest
-    void tearDown(){
+    protected void tearDown(){
         driver.quit();
     }
 
