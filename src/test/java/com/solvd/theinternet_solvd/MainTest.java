@@ -9,28 +9,21 @@ import org.testng.annotations.*;
 
 public abstract class MainTest {
 
-    WebDriver driver;
+    protected WebDriver driver;
 
     @BeforeClass
-    void setupClass(){
+    public void setupClass(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
+        setupTest();
     }
 
     @BeforeTest
     abstract void setupTest();
 
     @AfterTest
-    void tearDown(){
+    public void tearDown(){
         driver.quit();
     }
-
-//    @Test
-//    void test(){
-//        driver.get("https://bonigarcia.dev/selenium-webdriver-java/");
-//        String tittle = driver.getTitle();
-//
-//        Assert.assertTrue(tittle.contains("Selenium WebDriver"));
-//    }
 
 }
