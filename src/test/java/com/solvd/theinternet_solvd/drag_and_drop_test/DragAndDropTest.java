@@ -1,20 +1,17 @@
 package com.solvd.theinternet_solvd.drag_and_drop_test;
-
-import com.solvd.theinternet_solvd.MainTest;
+import com.solvd.theinternet_solvd.BaseTest;
 import com.solvd.theinternet_solvd.pages.DragAndDropPage;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
 
-public class DragAndDropTest extends MainTest {
-    @Override
+public class DragAndDropTest extends BaseTest {
+
+    @BeforeClass
     protected void setupTest(){
         //Accessing the page to test
         driver.get("https://the-internet.herokuapp.com/drag_and_drop");
     }
-
 
     @Test(description = "Drag block A in screen and drop into block B position",priority = 1)
     public void moveBlockAtoBlockB(){
