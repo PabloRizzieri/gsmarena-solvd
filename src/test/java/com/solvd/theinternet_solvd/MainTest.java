@@ -15,6 +15,7 @@ public abstract class MainTest {
     protected void setupClass(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
+        setupTest();
     }
 
 
