@@ -9,7 +9,6 @@
                 <methods>
                     <include name="moveBlockAtoBlockB"/>
                     <include name="moveBlockBtoBlockA"/>
-                    <exclude name="getPageTitle"></exclude>
                 </methods>
             </class>
         </classes>
