@@ -71,7 +71,7 @@ public class LoginFormTests extends BaseTest {
         LoginPage login = new LoginPage(driver);
         SuccessBoxPage success = login.fulfillFormAndPressEnter(prop.getProperty("GUSER01"), prop.getProperty("GPASS01"));
         success.logOut();
-        String text = success.getMessage();
+       
         //This eliminates the child's text content
         String correctedText = success.getMessage().split("\n")[0];
         assertEquals(correctedText, "You logged out of the secure area!");
