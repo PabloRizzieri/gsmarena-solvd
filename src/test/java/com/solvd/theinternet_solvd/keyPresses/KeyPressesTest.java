@@ -1,15 +1,15 @@
-package com.solvd.theinternet_solvd;
+package com.solvd.theinternet_solvd.keyPresses;
 
+import com.solvd.theinternet_solvd.BaseTest;
 import com.solvd.theinternet_solvd.pages.KeyPressesPage;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class KeyPressesTest extends MainTest{
+public class KeyPressesTest extends BaseTest {
     private KeyPressesPage keyPressesPage;
-    @Override
+
+    @BeforeMethod
     public void setupTest(){
         driver.get("https://the-internet.herokuapp.com/key_presses");
         keyPressesPage = new KeyPressesPage(driver);
@@ -21,5 +21,15 @@ public class KeyPressesTest extends MainTest{
         keyPressesPage.randomWord();
         String inputText = keyPressesPage.getInputText();
         Assert.assertEquals(inputText, "random");
+        keyPressesPage.clearInput();
+    }
+
+    @Test
+    public void successfulRandomTest2(){
+        keyPressesPage.clickInput();
+        keyPressesPage.randomWord();
+        String inputText = keyPressesPage.getInputText();
+        Assert.assertEquals(inputText, "random");
+        keyPressesPage.clearInput();
     }
 }
