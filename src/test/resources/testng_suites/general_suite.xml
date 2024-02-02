@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="General suite" verbose="-1" parallel="tests" thread-count="10">
+
     <test name="Jquery tests">
         <classes>
             <class name="com.solvd.theinternet_solvd.jquery.JQueryTests"/>
@@ -12,4 +13,15 @@
             <class name="com.solvd.theinternet_solvd.fileUpload.FileUploadTests"/>
         </classes>
     </test>
+    <test name="Moving blocks tests">
+        <classes>
+            <class name="com.solvd.theinternet_solvd.drag_and_drop_test.DragAndDropTest">
+                <methods>
+                    <include name="moveBlockAtoBlockB"/>
+                    <include name="moveBlockBtoBlockA"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
 </suite>
