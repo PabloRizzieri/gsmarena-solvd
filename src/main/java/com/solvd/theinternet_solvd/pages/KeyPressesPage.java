@@ -32,4 +32,8 @@ public class KeyPressesPage {
         return input.getAttribute("value");
     }
 
+    public void clearInput(){
+        input.clear();
+    }
+
 }
