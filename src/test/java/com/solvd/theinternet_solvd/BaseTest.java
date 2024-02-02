@@ -2,10 +2,10 @@ package com.solvd.theinternet_solvd;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
-
-public abstract class MainTest {
+public class BaseTest {
 
     protected WebDriver driver;
 
@@ -15,9 +15,7 @@ public abstract class MainTest {
     }
 
     @AfterClass
-    public void tearDown(){
+    public void tearDown() {
         driver.quit();
     }
-
-
 }

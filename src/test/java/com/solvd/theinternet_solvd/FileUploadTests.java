@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import static org.testng.Assert.assertEquals;
 
-public class FileUploadTests extends MainTest {
+public class FileUploadTests extends BaseTest {
     private FileUploadPage fileUploadPage;
 
     @BeforeMethod
