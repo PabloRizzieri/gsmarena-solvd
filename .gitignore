@@ -9,6 +9,9 @@ drivers/
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
+.idea/misc.xml
+.idea/vcs.xml
+.idea/encodings.xml
 .idea
 *.iws
 *.iml
