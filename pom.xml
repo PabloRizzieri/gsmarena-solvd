@@ -16,7 +16,7 @@
         <testNGVersion>7.9.0</testNGVersion>
         <webDriverManagerVersion>5.6.3</webDriverManagerVersion>
         <mavenSurefirePluginVersion>3.1.2</mavenSurefirePluginVersion>
-        <suite/>
+        <suite>general_suite</suite>
     </properties>
 
     <dependencies>
