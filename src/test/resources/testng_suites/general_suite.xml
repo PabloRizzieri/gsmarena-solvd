@@ -9,7 +9,7 @@
     </test>
     <test name="File upload tests">
         <classes>
-            <class name="com.solvd.theinternet_solvd.FileUploadTests"/>
+            <class name="com.solvd.theinternet_solvd.fileUpload.FileUploadTests"/>
         </classes>
     </test>
 </suite>

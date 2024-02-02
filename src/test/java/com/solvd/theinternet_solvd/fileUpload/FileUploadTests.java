@@ -1,4 +1,5 @@
-package com.solvd.theinternet_solvd;
+package com.solvd.theinternet_solvd.fileUpload;
+import com.solvd.theinternet_solvd.BaseTest;
 import com.solvd.theinternet_solvd.pages.FileUploadPage;
 import org.testng.annotations.*;
 import java.io.FileInputStream;
