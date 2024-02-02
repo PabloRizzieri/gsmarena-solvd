@@ -32,4 +32,14 @@
         </classes>
     </test>
 
+    <test name="Key Presses Tests">
+        <classes>
+            <class name="com.solvd.theinternet_solvd.keyPresses.KeyPressesTest">
+                <methods>
+                    <include name="successfulRandomTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
 </suite>
